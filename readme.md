@@ -200,10 +200,34 @@ HELLO
 ---
 Another thind we can do is split a string into an array so we have a method called `split()` and then as a parameter, this takes in whatever you want to split by.
 
-If you want to split by letter
+If you want to split by letter, you simply pass `''` (without a space) as a parameter.
+
+```js
+console.log(s.split(''));
+```
+
+Which will output the following array (more on Arrays later):
+
+![JS Split Array](./images/JS_Split_Array.png)
 
 
+> ### *More practical use-case for `split()`
+> *If you have a form where we're adding a blog post and we're adding tags:*
+> ```js
+> const blogTags = 'technology, computers, it, code';
+> ```
+> *Now, you'd want to be able to take that `string` and create an `array` out of it.
+> In this case, we would pass the parameter `, ` because in between each word is a comma and a space. So you'd write it like this:
+> ```js
+> console.log(blogTags.split(, ));
+> ```
+> *Which would output an array like this:*
+> ![blogTags Array](images/blogTags_Array.png)
+> That would be very handy because now you can put that into a database, and you can search to it. 
 
+# `Arrays`
+
+`Arrays` are variables that hold multiple values.
 
 
 
