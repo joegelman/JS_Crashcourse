@@ -196,8 +196,7 @@ console.log(s.substring(0, 5).toUpperCase);
 Which will in turn, output:
 ```
 HELLO
-```
-
+``
 
 
 
