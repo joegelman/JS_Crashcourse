@@ -162,9 +162,9 @@ Will output:
 HELLO WORLD!
 ```
 
-*Because `toUpperCase()` is a *method* it needs parentheses. And basically methods are *functions* associated with an *object*.
+> *Because `toUpperCase()` is a *method* it needs parentheses. And basically methods are *functions* associated with an *object*.
 
-We can do the opposite as well, `toLowerCase()`:
+We can do the opposite as well, with `toLowerCase()`:
 
 ```js
 console.log(s.toLowerCase());
@@ -211,7 +211,7 @@ Which will output the following array (more on Arrays later):
 ![JS Split Array](./images/JS_Split_Array.png)
 
 
-> ### *More practical use-case for `split()`
+> ### More practical use-case for `split()`
 > *If you have a form where we're adding a blog post and we're adding tags:*
 > ```js
 > const blogTags = 'technology, computers, it, code';
@@ -229,10 +229,93 @@ Which will output the following array (more on Arrays later):
 
 `Arrays` are variables that hold multiple values.
 
+For example 🍎🍊🍐;
+```js
+const fruits = ['apples', 'oranges', 'pears'];
+```
 
+There's a few ways to work with Arrays.
 
+You can directly add an item to either an existing or a new slot.
 
+For example 🍇;
+```js
+fruits[3] = 'grapes';
+```
 
+Now this would add `'grapes'` at index[`3`] (note, this is the 4th slot, because index counts start at `0`) result in the following array:
+
+```js
+["apples", "oranges", "pears", "grapes"]
+```
+
+Thing is, this isn't the best way. You won't always know how many values are in the array.
+
+That's why you should use the `push()` method instead.
+
+```js
+fruits.push('mangos');
+```
+
+No matter how many items are in an array, the output will be:
+
+```js
+["apples", "oranges", "pears", "grapes", "mangoes"]
+```
+
+So, what if we wanted to add an item at the beginning? 🍓
+
+We could use the method, `unshift()`:
+
+```js
+fruits.unshift('strawberries');
+```
+
+This will return:
+
+```js
+["strawberries", "apples", "oranges", "pears", "grapes"]
+```
+
+What if we changed our mind, and didn't want grapes anymore? 
+
+That's where the method `pop()` comes in. It knocks the last item off an array.
+
+So if we ran the method `pop()`:
+
+```js
+fruits.pop();
+```
+
+It would return:
+
+```js
+["strawberries", "apples", "oranges", "pears"]
+```
+
+## A few more `Array` utilities 🛠:
+
+### `Array.isArray()`
+
+If you want to check if an item is an array, run this method. So, for example, if we `console.log()` this:
+
+```js
+Array.isArray(fruits);
+```
+It would return:
+
+```
+true
+```
+
+If you want to get the index of a certain value you can use the method `indexOf` to see.
+
+So, for example, if we `console.log()` this:
+
+```js
+fruits.indexOf('oranges');
+```
+There's a lot more to cover, but that's enough on Arrays for now.
 
 
 
