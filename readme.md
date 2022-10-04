@@ -45,25 +45,25 @@ Three types of variables
 
 Var is the OG variable – but it's outdated since ES6. Especially since it's globally scoped.
 
-## Let + Const
+## `Let` & `Const`
 
 These are both at "Block-Level" Scope
 
-### Let
+### `Let`
 
-Let is unique becase it "lets" you redesignate variables.
+`Let` is unique becase it "lets" you redesignate variables.
 
-### Const
+### `Const`
 
 Is a "constant" meaning, once it's assigned it can never be reassigned.
 
 Must assign a value right from the start.
 
-### When to use let vs. const
+### When to use `let` vs. `const`
 
-Some people say it's best to have the flexibility of Let all the time.
+Some people say it's best to have the flexibility of `Let` all the time.
 
-But best practice is to always use Const, unless you know you're going to need Let *(leads to more robust, secure code)*
+But best practice is to always use `Const`, unless you know you're going to need `Let` *(leads to more robust, secure code)*
 
 <br>
 
@@ -174,6 +174,30 @@ Will output:
 ```
 hello world!
 ```
+
+---
+If we want to grab just part of the string, we can use the method `substring(x, y);`:
+
+```js
+console.log(s.substring(0,5));
+```
+
+This will start at the first character '`H`' index[0], and stop at '`_`' index[5] (without including it).
+
+Meaning the output will be:
+```
+Hello
+```
+---
+You can even tack on additional methods. For example adding `toUpperCase;`
+```js
+console.log(s.substring(0, 5).toUpperCase);
+```
+Which will in turn, output:
+```
+HELLO
+```
+
 
 
 
