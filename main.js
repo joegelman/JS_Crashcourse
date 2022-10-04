@@ -1,2 +1,3 @@
-console.log('Hello World');
-console.error('This is an error');
+const s = 'Hello World!';
+
+console.log(s.split(''));
