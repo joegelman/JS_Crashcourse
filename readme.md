@@ -196,7 +196,11 @@ console.log(s.substring(0, 5).toUpperCase);
 Which will in turn, output:
 ```
 HELLO
-``
+```
+---
+Another thind we can do is split a string into an array so we have a method called `split()` and then as a parameter, this takes in whatever you want to split by.
+
+If you want to split by letter
 
 
 
