@@ -2,7 +2,7 @@
 ## Based on [this](https://youtu.be/hdI2bqOjy3c) tutorial
 
 ---
-# 1. The `<Script>` Tag
+# 1. The `<Script>` Tag 📜
 <!-- <button>Time Stamp</button> -->
 
 <!-- <br> -->
@@ -15,7 +15,7 @@ Syntax for external JS is:
 
 ---
 
-# 2. The Console
+# 2. The Console 💻
 
 Console shows up in dev tools when you click inspect in the browser (can also access from IDE). 
 
@@ -69,7 +69,7 @@ But best practice is to always use `Const`, unless you know you're going to need
 
 ___
 
-# 4. Data Types
+# 4. Data Types 🔣
 
 ## Data Primitives
 
@@ -98,7 +98,7 @@ const y = undefined;
 ### *Symbol**
 > *Symbol was only added in ES6 and beyond the scope of beginners*
 
-## Strings
+## Strings 🧶
 
 Let's say we have:
 
@@ -225,7 +225,9 @@ Which will output the following array (more on Arrays later):
 > ![blogTags Array](images/blogTags_Array.png)
 > That would be very handy because now you can put that into a database, and you can search to it. 
 
-# `Arrays`
+---
+
+# `Arrays` 🔢
 
 `Arrays` are variables that hold multiple values.
 
@@ -308,6 +310,8 @@ It would return:
 true
 ```
 
+### `indexOf()`
+
 If you want to get the index of a certain value you can use the method `indexOf` to see.
 
 So, for example, if we `console.log()` this:
@@ -317,5 +321,8 @@ fruits.indexOf('oranges');
 ```
 There's a lot more to cover, but that's enough on Arrays for now.
 
+---
+
+# Object Literals 👤
 
 
